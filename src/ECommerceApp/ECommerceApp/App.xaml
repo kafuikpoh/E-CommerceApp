@@ -1,5 +1,41 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="ECommerceApp.App">
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="ECommerceApp.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
     <Application.Resources>
+        <ResourceDictionary>
+
+            <!--  Colors  -->
+            <Color x:Key="RatingColor">#F5BB41</Color>
+            <Color x:Key="HeaderTextColor">#000000</Color>
+            <Color x:Key="BackgroundColor">#FBFBFB</Color>
+            <Color x:Key="SearchBoxColor">#F3F3F2</Color>
+            <Color x:Key="AccentColor">#EB7539</Color>
+            <Color x:Key="SubTextColor">#A1A0A0</Color>
+            <Color x:Key="ShadowColor">#FBF1EE</Color>
+            <Color x:Key="CircularBackground">#EFD4C9</Color>
+
+            <!--  Fonts  -->
+            <OnPlatform
+                x:Key="Gilroy"
+                x:TypeArguments="x:String"
+                Android="Gilroy-Light.otf#Gilroy Light"
+                iOS="Gilroy Light" />
+
+            <OnPlatform
+                x:Key="Gilroy"
+                x:TypeArguments="x:String"
+                Android="Gilroy-Light.otf#Gilroy ExtraBold"
+                iOS="Gilroy ExtraBold" />
+
+            <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="Material Design Icons" />
+                <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />
+            </OnPlatform>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -132,4 +132,9 @@
       <Name>ECommerceApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Gilroy-ExtraBold.otf" />
+    <BundleResource Include="Resources\Gilroy-Light.otf" />
+    <BundleResource Include="Resources\materialdesignicons-webfont.ttf" />
+  </ItemGroup>
 </Project>
